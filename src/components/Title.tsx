@@ -1,7 +1,7 @@
 interface Props {
-  heading: string
-  tagline?: string
-}
+  heading: string;
+  tagline?: string;
+};
 
 function Title({ heading, tagline }: Props) {
   return (
@@ -13,7 +13,7 @@ function Title({ heading, tagline }: Props) {
         </span>
       )}
     </h1>
-  )
+  );
 }
 
-export default Title
+export default Title;

@@ -1,5 +1,6 @@
-import Title from "@/components/Title"
-import Link from "next/link"
+import Button from "@/components/Button";
+import Title from "@/components/Title";
+import Link from "next/link";
 
 function NotFound() {
   return (
@@ -16,12 +17,12 @@ function NotFound() {
       <Link
         href="/"
         className="block w-fit">
-        <button className="min-w-20 px-3 py-2 bg-white hover:bg-gray-300 text-black rounded cursor-pointer duration-200">
+        <Button className="min-w-20">
           Back to Home
-        </button>
+        </Button>
       </Link>
     </main>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;

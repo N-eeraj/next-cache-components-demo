@@ -1,7 +1,8 @@
 "use client"
 
-import Title from "@/components/Title"
-import Link from "next/link"
+import Button from "@/components/Button";
+import Title from "@/components/Title";
+import Link from "next/link";
 
 const refresh = () => window.location.reload()
 
@@ -21,18 +22,19 @@ function ErrorPage() {
         <Link
           href="/"
           className="block w-fit">
-          <button className="min-w-20 px-3 py-2 bg-white hover:bg-gray-300 text-black rounded cursor-pointer duration-200">
+          <Button className="min-w-20">
             Back to Home
-          </button>
+          </Button>
         </Link>
-        <button
-          className="min-w-20 px-3 py-2 hover:bg-white/10 text-gray-100 outline outline-white/20 rounded cursor-pointer duration-200"
+        <Button
+          variant="outlined"
+          className="min-w-20"
           onClick={refresh}>
           Refresh Page
-        </button>
+        </Button>
       </div>
     </main>
-  )
+  );
 }
 
-export default ErrorPage
+export default ErrorPage;
