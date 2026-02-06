@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+import StreamSection from "./components/StreamSection";
+
 function Home() {
   return (
-    <div>
-      Static Page
-    </div>
+    <main className="main-container">
+      <Header />
+      <StreamSection />
+    </main>
   );
 }
 

@@ -22,3 +22,15 @@ body {
 @utility main-container {
   @apply mx-auto max-w-3xl pt-16 p-6  overflow-x-hidden;
 }
+
+@utility code-block {
+  @apply inline-block rounded bg-slate-800 text-white px-1.5 py-0.5 font-mono text-sm;
+}
+
+@utility link {
+  @apply text-sky-300 hover:underline font-medium;
+}
+
+@utility skeleton {
+  @apply bg-gray-700 rounded animate-pulse;
+}
