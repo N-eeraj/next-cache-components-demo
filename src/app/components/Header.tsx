@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="relative space-y-4 mb-8">
+    <header className="relative space-y-4">
       <h1 className="text-3xl font-bold tracking-tight text-gray-100">
         Pure Static Page
       </h1>
