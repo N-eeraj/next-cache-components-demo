@@ -3,7 +3,7 @@ function Loading() {
     <div>
       Loading Page...
     </div>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

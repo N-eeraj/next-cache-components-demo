@@ -1,4 +1,4 @@
-import { CachedComponent } from "@/components/FetchComponent"
+import { CachedComponent } from "@/components/FetchComponent";
 
 async function CachedPage() {
   return (
@@ -8,7 +8,7 @@ async function CachedPage() {
       </h1>
       <CachedComponent />
     </div>
-  )
+  );
 }
 
-export default CachedPage
+export default CachedPage;

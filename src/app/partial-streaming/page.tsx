@@ -1,5 +1,5 @@
-import { Suspense } from "react"
-import { DynamicComponent } from "@/components/FetchComponent"
+import { Suspense } from "react";
+import { DynamicComponent } from "@/components/FetchComponent";
 
 async function PartialStreaming() {
   return (
@@ -11,7 +11,7 @@ async function PartialStreaming() {
         <DynamicComponent />
       </Suspense>
     </div>
-  )
+  );
 }
 
-export default PartialStreaming
+export default PartialStreaming;

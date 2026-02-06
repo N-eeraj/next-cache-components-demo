@@ -1,4 +1,4 @@
-import { DynamicComponent } from "@/components/FetchComponent"
+import { DynamicComponent } from "@/components/FetchComponent";
 
 async function FullPageStreaming() {
   return (
@@ -8,7 +8,7 @@ async function FullPageStreaming() {
       </h1>
       <DynamicComponent />
     </div>
-  )
+  );
 }
 
-export default FullPageStreaming
+export default FullPageStreaming;

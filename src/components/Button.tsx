@@ -6,7 +6,7 @@ import type {
 export type Variant = "primary" | "outlined"
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: Variant
+  variant?: Variant;
 };
 
 const variantClasses: Record<Variant, string> = {
