@@ -1,26 +1,26 @@
 import Button from "@/components/Button";
 import Link from "next/link";
 
-function PartialStreamSection() {
+function CacheAndPartialStreamSection() {
   return (
     <section>
       <h2 className="text-2xl font-semibold">
-        Pages with Partial Stream
+        Pages with Caching and Partial Stream
       </h2>
 
       <p>
-        Checkout the following pages, where the dynamic data is streamed in on demand while the static portion is pre-rendered.
+        Checkout the following pages, where the cacheable data is cached and dynamic data is streamed in on demand.
       </p>
 
       <div className="flex gap-x-2 mt-2">
-        <Link href="/random/user">
+        <Link href="/shop">
           <Button>
-            Random User
+            Shop
           </Button>
         </Link>
-        <Link href="/random/fact">
+        <Link href="/dashboard">
           <Button variant="outlined">
-            Random Fact
+            Dashboard
           </Button>
         </Link>
       </div>
@@ -28,4 +28,4 @@ function PartialStreamSection() {
   );
 }
 
-export default PartialStreamSection;
+export default CacheAndPartialStreamSection;

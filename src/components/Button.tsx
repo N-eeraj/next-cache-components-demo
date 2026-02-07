@@ -14,13 +14,15 @@ const variantClasses: Record<Variant, string> = {
   outlined: "hover:bg-white/10 text-gray-100 outline outline-white/20",
 };
 
-function Button({ variant = "primary", children, className = "" }: Props) {
+function Button({ variant = "primary", children, className = "", ...props }: Props) {
   return (
-    <button className={clsx(
-      "px-3 py-2 rounded cursor-pointer duration-200",
-      variantClasses[variant],
-      className,
-    )}>
+    <button
+      {...props}
+      className={clsx(
+        "px-3 py-2 rounded cursor-pointer duration-200",
+        variantClasses[variant],
+        className,
+      )}>
       {children}
     </button>
   );

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import Button from "@/components/Button";
 import Title from "@/components/Title";
 import Link from "next/link";
 
-const refresh = () => window.location.reload()
+const refresh = () => window.location.reload();
 
 function ErrorPage() {
   return (
