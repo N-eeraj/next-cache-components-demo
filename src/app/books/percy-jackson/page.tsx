@@ -2,8 +2,6 @@ import BooksHeader from "@/components/Books/Header";
 import Books from "./components/Books";
 import CachingDetails from "@/components/Books/CachingDetails";
 import Navigation from "@/components/Navigation";
-import Link from "next/link";
-import Button from "@/components/Button";
 
 async function HarryPotterBooks() {
   return (
@@ -16,13 +14,11 @@ async function HarryPotterBooks() {
 
       <CachingDetails />
 
-      <Navigation>
-        <Link href="/books/harry-potter">
-          <Button variant="outlined">
-            Harry Potter Books
-          </Button>
-        </Link>
-      </Navigation>
+      <Navigation
+        extraLink={{
+          href: "/books/harry-potter",
+          text: "Harry Potter Books",
+        }} />
     </main>
   );
 }

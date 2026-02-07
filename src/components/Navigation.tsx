@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { PropsWithChildren } from "react";
+import Button from "./Button";
 
-interface Props extends PropsWithChildren {
-  previous?: string;
-  next?: string;
+interface Props {
+  extraLink?: {
+    href: string;
+    text: string;
+  };
 }
 
-function Navigation({ previous, next, children }: Props) {
+function Navigation({ extraLink }: Props) {
   return (
     <nav className="mt-12 flex justify-between items-center text-sm">
       <Link
@@ -16,27 +18,13 @@ function Navigation({ previous, next, children }: Props) {
         Home
       </Link>
 
-      {children}
-
-      {(previous || next) && (
-        <div className="flex gap-4">
-          {previous && (
-            <Link
-              href={previous}
-              className="text-gray-600 hover:text-sky-700 hover:underline"
-            >
-              ← Previous
-            </Link>
-          )}
-          {next && (
-            <Link
-              href={next}
-              className="text-gray-600 hover:text-sky-700 hover:underline"
-            >
-              Next  →
-            </Link>
-          )}
-        </div>
+      
+      {!!(extraLink) && (
+        <Link href={extraLink.href}>
+          <Button variant="outlined">
+            {extraLink.text}
+          </Button>
+        </Link>
       )}
     </nav>
   );

@@ -11,8 +11,8 @@ function RandomFact() {
 
       <Navigation
         extraLink={{
-          href: "/random/user",
-          text: "Random User",
+          href: "/random/fact",
+          text: "Random Fact",
         }} />
     </main>
   );

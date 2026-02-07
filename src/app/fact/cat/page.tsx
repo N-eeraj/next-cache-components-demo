@@ -2,8 +2,6 @@ import FactHeader from "@/components/Fact/Header";
 import Fact from "./components/Fact";
 import StreamingDetails from "@/components/Fact/StreamingDetails";
 import Navigation from "@/components/Navigation";
-import Link from "next/link";
-import Button from "@/components/Button";
 
 async function CatFact() {
   return (
@@ -14,14 +12,12 @@ async function CatFact() {
 
       <StreamingDetails />
 
-      <Navigation>
-        <Link href="/fact/dog">
-          <Button variant="outlined">
-            Dog Fact
-          </Button>
-        </Link>
-      </Navigation>
-    </main>
+      <Navigation
+        extraLink={{
+          href: "/fact/dog",
+          text: "Dog Fact",
+        }} />
+      </main>
   );
 }
 
