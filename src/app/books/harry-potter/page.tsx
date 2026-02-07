@@ -19,7 +19,7 @@ async function HarryPotterBooks() {
       <Navigation>
         <Link href="/books/percy-jackson">
           <Button variant="outlined">
-            Percy Jackson
+            Percy Jackson Books
           </Button>
         </Link>
       </Navigation>

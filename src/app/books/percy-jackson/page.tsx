@@ -19,7 +19,7 @@ async function HarryPotterBooks() {
       <Navigation>
         <Link href="/books/harry-potter">
           <Button variant="outlined">
-            Harry Potter
+            Harry Potter Books
           </Button>
         </Link>
       </Navigation>
