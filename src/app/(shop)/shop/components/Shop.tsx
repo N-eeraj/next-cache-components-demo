@@ -1,5 +1,5 @@
 import AppBar from "./AppBar";
-import Products from "./Products";
+import Products from "./Product/List";
 import Recommendation from "./Recommendation";
 
 function Shop() {
