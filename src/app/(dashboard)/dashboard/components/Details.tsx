@@ -10,25 +10,13 @@ function PageDetails() {
         <code className="code-block">
           Suspense
         </code>
-        &nbsp;to stream the&nbsp;
-        <strong>
-          profile data + cart
-        </strong>
-        &nbsp;and the&nbsp;
-        <strong>
-          recommendation
-        </strong>
-        &nbsp;sections.
+        &nbsp;to stream the dynamic data to be fetched on every page visit such as the data to be shown for the logged in user.
         A loading state is shown only for the suspended sections, and content appears as soon as it is ready.
-        The cached&nbsp;
-        <strong>
-          Products
-        </strong>
-        &nbsp;section is built using the&nbsp;
+        The data to be shared among all the users are cached and built using the&nbsp;
         <code className="code-block">
           "use cache"
         </code>
-        &nbsp;directive.
+        &nbsp;directive which is revalidated after an interval.
         Static and cached parts of the page render instantly and stay interactive, while dynamic sections are fetched and streamed at runtime.
       </p>
     </section>
