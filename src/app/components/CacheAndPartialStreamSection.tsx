@@ -13,14 +13,14 @@ function CacheAndPartialStreamSection() {
       </p>
 
       <div className="flex gap-x-2 mt-2">
-        <Link href="/shop">
+        <Link href="/dashboard">
           <Button>
-            Shop
+            Dashboard
           </Button>
         </Link>
-        <Link href="/dashboard">
+        <Link href="/shop">
           <Button variant="outlined">
-            Dashboard
+            Shop
           </Button>
         </Link>
       </div>
