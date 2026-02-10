@@ -4,13 +4,39 @@ import maleIcon from "@/assets/icons/male.svg";
 import femaleIcon from "@/assets/icons/female.svg";
 import Image from "next/image";
 
+function getFallback() {
+  const genderBool = Math.random() > 0.5;
+  const firstName = genderBool ? "John" : "Jane";
+  const age = Math.round(Math.random() * 80) + 10;
+  const yob = new Date().getFullYear() - age;
+
+  return {
+    name: {
+      title: genderBool ? "Mr" : "Ms",
+      first: firstName,
+      last: "Doe",
+    },
+    email: `${firstName}doe${yob}@gmail.com`.toLowerCase(),
+    picture: {
+      large: "https://placehold.co/256x256/ccc/111",
+    },
+    gender: genderBool ? "male" : "female",
+    login: {
+      username: `${firstName}_doe_${yob}`.toLowerCase(),
+    },
+    dob: {
+      age,
+    },
+  };
+}
+
 async function User() {
   const {
     datetimeNow,
     ...data
-  } = await fetchData("https://randomuser.me/api/");
+  } = await fetchData("https://randomuser.me/api");
 
-  const [randomUser] = data?.results ?? [];
+  const randomUser = data?.results?.[0] ?? getFallback();
   const genderIcon = randomUser.gender === "male" ? maleIcon : femaleIcon;
 
   return (
