@@ -21,7 +21,7 @@ async function BarChart() {
   console.log(`Bar chart data fetched at: ${datetimeNow}`);
 
   return (
-    <div className="md:col-span-2 p-4 bg-gray-800 border border-gray-700 rounded-xl">
+    <div className="md:col-span-2 p-4 bg-zinc-800 border border-zinc-700 rounded-xl">
       <h3 className="mb-4 text-sm font-semibold text-gray-100">
         Bar Chart
       </h3>
@@ -37,9 +37,9 @@ async function BarChart() {
             </span>
           </div>
 
-          <div className="h-3 w-full rounded bg-gray-700 overflow-hidden">
+          <div className="h-3 w-full rounded bg-zinc-900 overflow-hidden">
             <div
-              className="h-full rounded bg-blue-500"
+              className="h-full rounded bg-white"
               style={{ width: `${x}%` }}
             />
           </div>
@@ -55,9 +55,9 @@ async function BarChart() {
             </span>
           </div>
 
-          <div className="h-3 w-full rounded bg-gray-700 overflow-hidden">
+          <div className="h-3 w-full rounded bg-zinc-900 overflow-hidden">
             <div
-              className="h-full rounded bg-green-500"
+              className="h-full rounded bg-white"
               style={{ width: `${y}%` }}
             />
           </div>

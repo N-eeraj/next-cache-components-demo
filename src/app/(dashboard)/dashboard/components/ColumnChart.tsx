@@ -19,8 +19,8 @@ async function ColumnChart() {
   console.log(`Column chart data fetched at: ${datetimeNow}`);
 
   return (
-    <div className="min-h-40 md:col-span-3 flex flex-col gap-y-2.5 rounded-xl bg-gray-800 p-4 border border-gray-700">
-      <h3 className="text-sm font-semibold text-gray-100">
+    <div className="min-h-40 md:col-span-3 flex flex-col gap-y-2.5 rounded-xl bg-zinc-800 p-4 border border-zinc-700">
+      <h3 className="text-sm font-semibold text-zinc-100">
         Column Chart
       </h3>
 
@@ -29,12 +29,12 @@ async function ColumnChart() {
           {data.map((value, index) => (
             <div
               key={index}
-              className="flex flex-col justify-end flex-1 h-full">
+              className="flex flex-col justify-end flex-1 h-full bg-zinc-900 rounded">
               <div
-                className="bg-blue-500 rounded-t transition-all duration-300"
+                className="bg-white rounded-t transition-all duration-300"
                 style={{ height: `${value}%` }}
                 title={`${value}%`} />
-              <span className="hidden sm:block p-1 bg-gray-600 text-[10px] text-center text-white rounded-b">
+              <span className="hidden sm:block p-1 bg-zinc-700 text-[10px] text-center text-white rounded-b">
                 {value}%
               </span>
             </div>
