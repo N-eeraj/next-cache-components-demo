@@ -3,6 +3,7 @@ import CachedSection from "./components/CachedSection";
 import StreamSection from "./components/StreamSection";
 import PartialStreamSection from "./components/PartialStreamSection";
 import CacheAndPartialStreamSection from "./components/CacheAndPartialStreamSection";
+import BuildLogs from "./components/BuildLogs";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <CachedSection />
       <PartialStreamSection />
       <CacheAndPartialStreamSection />
+      <BuildLogs />
     </main>
   );
 }
