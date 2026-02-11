@@ -6,7 +6,7 @@ async function Profile() {
   const {
     datetimeNow,
     ...data
-  } = await fetchData(`${process.env.NEXT_APP_URL}/api/shop/profile`);
+  } = await fetchData(`${process.env.NEXT_APP_URL}/api/shop/profile`, 2000);
   console.log(`Shop profile data fetched at: ${datetimeNow}`);
 
   return (

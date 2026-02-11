@@ -7,7 +7,7 @@ async function Recommendation() {
   const {
     datetimeNow,
     ...data
-  } = await fetchData(`${process.env.NEXT_APP_URL}/api/shop/recommendation`, 3000);
+  } = await fetchData(`${process.env.NEXT_APP_URL}/api/shop/recommendation`, 5000);
   console.log(`Shop recommendation data fetched at: ${datetimeNow}`);
   const products = (data?.data ?? []) as Array<ProductType>;
 

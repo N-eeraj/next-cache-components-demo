@@ -4,7 +4,7 @@ async function Data() {
   const {
     datetimeNow,
     ...data
-  } = await fetchData(`${process.env.NEXT_APP_URL}/api/dashboard/user-stats`, 1000)
+  } = await fetchData(`${process.env.NEXT_APP_URL}/api/dashboard/user-stats`, 1500);
   console.log(`User stats fetched at: ${datetimeNow}`);
 
   return (

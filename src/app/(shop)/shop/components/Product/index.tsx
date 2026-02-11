@@ -21,7 +21,7 @@ function Product({ name, image, price, rating, reviewCount, category }: Props) {
             src={image}
             alt={name}
             fill
-            objectFit="contain"
+            className="object-contain"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-sm text-zinc-500">

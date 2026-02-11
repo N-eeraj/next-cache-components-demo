@@ -13,9 +13,7 @@ function Book({ title, cover }: Props) {
           src={cover}
           alt={title}
           fill
-          objectFit="contain"
-          objectPosition="bottom"
-          className="group-hover:scale-95 group-hover:brightness-105 saturate-40 group-hover:saturate-100 duration-300" />
+          className="object-contain group-hover:scale-95 group-hover:brightness-105 saturate-40 group-hover:saturate-100 duration-300" />
       </div>
       <strong className="group-hover:text-shadow-xs text-shadow-white/45 duration-300">
         {title}
